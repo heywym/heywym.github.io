@@ -7,10 +7,12 @@
 
 # Site settings
 title: 王远谋的博客
+name: 王远谋的博客
 email: heywym@qq.com
 description: 王远谋的个人博客网站.
 baseurl: "/blog" # the subpath of your site, e.g. /blog
 url: "http://yourdomain.com" # the base hostname & protocol for your site
+permalink: /blog/:year/:month/:day/:title
 #twitter_username: alan_wong
 github_username:  alan-w-255
 
