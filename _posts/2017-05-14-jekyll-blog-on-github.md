@@ -1,11 +1,14 @@
 ---
 layout: post
-title: "使用jekyll在github pages 上写博客"
+title: "使用 jekyll 在 github pages 上写博客"
 date: 2017-05-14 23:27:20 +0800
 categories: 教程
 tags: 博客, jekyll, github pages
 ---
 -------------------------------
+
+*本文假设读者使用ubuntu系统， 并且已经安装git.*
+
 ## 创建我们的第一篇文章
 jekyll 允许你用Markdown语法来写博客， 然后很轻松的发布到github pages 上去， 这是完全免费的。
 
@@ -62,7 +65,7 @@ jekyll 允许你用Markdown语法来写博客， 然后很轻松的发布到gith
 
 下面我们要做的就是把我们的静态博客网站上传到github pages 的免费个人主页。这是github pages 的官方网站[GitHub Pages](https://pages.github.com/)
 
-本文假定读者对 git 和 github 有初步的了解, 如果不了解也没关系， 只要照着做就好了。 这里有[git的简明指南](http://rogerdudler.github.io/git-guide/index.zh.html)和[github的教程](https://github.com/lavor-zl/Github-Git/blob/master/%E5%88%9D%E5%85%A5Github.md)。
+本文假定读者对 git 和 github 有初步的了解, 如果不了解也没关系， 只要照着做就好了。 这里有[git的简明指南](https://rogerdudler.github.io/git-guide/index.zh.html)和[github的教程](https://github.com/lavor-zl/Github-Git/blob/master/%E5%88%9D%E5%85%A5Github.md)。
 
 首先登录你的github账号， 新建一个仓库。
 
@@ -100,6 +103,12 @@ jekyll 允许你用Markdown语法来写博客， 然后很轻松的发布到gith
 如果这几条命令没问题，你的静态博客网站就上传到github pages 上面了。
 
 等一分钟， 你在浏览器访问， *https://username.github.io* 你就能看到你写的博客了。
+
+让我们来看一下效果。
+
+![myfirstblog.png](http://opyfqi9od.bkt.clouddn.com/blog/myfirstblog.png)
+
+哈， 我们的第一篇博客就写好了。
 
 就开始创建仓库麻烦一点， 以后就可以直接在_post 目录下创建一个博客， 然后在项目根目录执行。
 
