@@ -64,7 +64,7 @@ jekyll 允许你用Markdown语法来写博客， 然后很轻松的发布到gith
 
 首先登录你的github账号， 新建一个仓库。
 
-[blog/create-new-github-repositories.png](http://opyfqi9od.bkt.clouddn.com/blog/create-new-github-repositories.png)s
+[blog/create-new-github-repositories.png](http://opyfqi9od.bkt.clouddn.com/blog/create-new-github-repositories.png)
 
 仓库的名字必须是你的用户名，必须以github.io作为域名。如下图所示， 然后点击创建就好了。
 
