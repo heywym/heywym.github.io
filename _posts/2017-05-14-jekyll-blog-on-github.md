@@ -68,7 +68,7 @@ jekyll 允许你用Markdown语法来写博客， 然后很轻松的发布到gith
 
 仓库的名字必须是你的用户名，必须以github.io作为域名。如下图所示， 然后点击创建就好了。
 
-![/blog/createanewrespository.png](http://opyfqi9od.bkt.clouddn.com//blog/createanewrespository.png)
+[/blog/createanewrespository.png](http://opyfqi9od.bkt.clouddn.com//blog/createanewrespository.png)
 
 然后在你的myblog目录下初始化一个git仓库, 切换到你的jekyll项目根目录。输入命令。
 
