@@ -117,6 +117,6 @@ jekyll 还支持更换主题， 支持插件， 和很多自定义功能。 你�
 #### 参考资料：
 
 - [jekyll 中文文档](http://jekyllcn.com/docs/home/)
-- [git 简明指南](http://rogerdudler.github.io/git-guide/index.zh.html)
+- [git 简明指南](https://rogerdudler.github.io/git-guide/index.zh.html)
 - [github pages主页](https://pages.github.com/)
 
