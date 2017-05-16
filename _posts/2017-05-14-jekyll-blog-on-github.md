@@ -4,6 +4,7 @@ title: "使用 jekyll 在 github pages 上写博客"
 date: 2017-05-14 23:27:20 +0800
 categories: 教程
 tags: 博客, jekyll, github pages
+comments: true
 ---
 -------------------------------
 
