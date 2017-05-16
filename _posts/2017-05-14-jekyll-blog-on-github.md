@@ -7,7 +7,6 @@ tags: 博客, jekyll, github pages
 comments: true
 ---
 -------------------------------
-
 *本文假设读者使用ubuntu系统， 并且已经安装git.*
 
 ## 创建我们的第一篇文章
