@@ -109,7 +109,6 @@ jekyll 允许你用Markdown语法来写博客， 然后很轻松的发布到gith
 ![myfirstblog.png](http://opyfqi9od.bkt.clouddn.com/blog/myfirstblog.png)
 
 哈， 我们的第一篇博客就写好了。
-
 就开始创建仓库麻烦一点， 以后就可以直接在_post 目录下创建一个博客， 然后在项目根目录执行。
 
 {% highlight shell %}
