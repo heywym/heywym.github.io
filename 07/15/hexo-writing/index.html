@@ -3,14 +3,19 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Hexo</title>
+  <title>Hexo-Writing | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="运行如下命令创建一个新的页面或文章: 1$ hexo new [layout] &amp;lt;title&amp;gt; layout 默认为 post, 但是能支持自定义. 你能在_config.yaml中改变默认layout. LayoutHexo 有三种默认布局: post, page 和 draft. 三种不同的文件分别保存在不同路径. 新创建的post文章保存在source/_post 文件夹里.">
+<meta name="keywords" content="Hexo">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo-Writing">
+<meta property="og:url" content="http://yoursite.com/2017/07/15/hexo-writing/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="运行如下命令创建一个新的页面或文章: 1$ hexo new [layout] &amp;lt;title&amp;gt; layout 默认为 post, 但是能支持自定义. 你能在_config.yaml中改变默认layout. LayoutHexo 有三种默认布局: post, page 和 draft. 三种不同的文件分别保存在不同路径. 新创建的post文章保存在source/_post 文件夹里.">
+<meta property="og:updated_time" content="2017-07-15T13:18:47.775Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
+<meta name="twitter:title" content="Hexo-Writing">
+<meta name="twitter:description" content="运行如下命令创建一个新的页面或文章: 1$ hexo new [layout] &amp;lt;title&amp;gt; layout 默认为 post, 但是能支持自定义. 你能在_config.yaml中改变默认layout. LayoutHexo 有三种默认布局: post, page 和 draft. 三种不同的文件分别保存在不同路径. 新创建的post文章保存在source/_post 文件夹里.">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -59,9 +64,7 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-hexo-writing" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-hexo-writing" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2017/07/15/hexo-writing/" class="article-date">
   <time datetime="2017-07-15T06:28:21.000Z" itemprop="datePublished">2017-07-15</time>
@@ -74,8 +77,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/07/15/hexo-writing/">Hexo-Writing</a>
+    <h1 class="article-title" itemprop="name">
+      Hexo-Writing
     </h1>
   
 
@@ -186,114 +189,19 @@
     </footer>
   </div>
   
-</article>
-
-
+    
+<nav id="article-nav">
   
-    <article id="post-Hexo-Server" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2017/07/15/Hexo-Server/" class="article-date">
-  <time datetime="2017-07-15T05:44:32.000Z" itemprop="datePublished">2017-07-15</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/07/15/Hexo-Server/">Hexo-Server</a>
-    </h1>
+    <a href="/2017/07/15/Hexo-Server/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Ouder</strong>
+      <div class="article-nav-title">Hexo-Server</div>
+    </a>
   
+</nav>
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h3 id="hexo-server"><a href="#hexo-server" class="headerlink" title="hexo-server"></a>hexo-server</h3><p>Hexo 3 发布后, 服务器从主模块分离, 要使用服务器功能, 你首先得安装 hexo-server</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ npm install hexo-server --save</div></pre></td></tr></table></figure>
-<p>一旦服务器被安装， 运行如下命令开启服务器. 你的网站默认运行在<code>http://localhost:4000</code>.当服务器运行, Hexo 会监视文件的修改并且自动更新, 所以没有必要重启服务器.</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>如果你想要改变端口或者遇到<code>EADDRINUSE</code>erros, 使用<code>-p</code>选项来设置一个不同的端口.</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server -p 5000</div></pre></td></tr></table></figure>
-<h3 id="静态模式"><a href="#静态模式" class="headerlink" title="静态模式"></a>静态模式</h3><p>在静态模式, 只有<code>public</code>文件夹里面的文件能被访问, 并且文件监视被禁用. 你在开启服务器之前必须运行<code>hexo generate</code>. 通常用于生产环境.</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server -s</div></pre></td></tr></table></figure>
-<h3 id="自定义IP"><a href="#自定义IP" class="headerlink" title="自定义IP"></a>自定义IP</h3><p>Hexo 服务器默认运行在 0.0.0.0. 你能覆盖默认IP设置.</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server -i 192.168.1.1</div></pre></td></tr></table></figure>
-<h3 id="Pow"><a href="#Pow" class="headerlink" title="Pow"></a>Pow</h3><p>Pow 是Mac的零配置机架式服务器.</p>
-<ul>
-<li><strong>安装</strong></li>
-</ul>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ curl get.pow.cx | sh</div></pre></td></tr></table></figure>
-<ul>
-<li><strong>设置</strong></li>
-</ul>
-<p>符号链接到文件夹到<code>~/.pow</code></p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ <span class="built_in">cd</span> ~/.pow</div><div class="line">$ ln -s /path/to/myapp</div></pre></td></tr></table></figure>
-<p>你的网站可以在<code>http://myapp.dev</code>访问了. 这个URL是基于符号连接的名字</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/07/15/Hexo-Server/" data-id="cj55ckdzd0000o4v9lsvr7s3v" class="article-share-link">Delen</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Hexo/">Hexo</a></li></ul>
-
-    </footer>
-  </div>
   
 </article>
-
-
-  
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2017/07/14/hello-world/" class="article-date">
-  <time datetime="2017-07-14T06:27:17.839Z" itemprop="datePublished">2017-07-14</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/07/14/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="快速开始"><a href="#快速开始" class="headerlink" title="快速开始"></a>快速开始</h2><h3 id="创建一个新的文章"><a href="#创建一个新的文章" class="headerlink" title="创建一个新的文章"></a>创建一个新的文章</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>更多信息: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="运行服务器"><a href="#运行服务器" class="headerlink" title="运行服务器"></a>运行服务器</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>更多信息: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="生成静态文件"><a href="#生成静态文件" class="headerlink" title="生成静态文件"></a>生成静态文件</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>更多信息: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="部署站点"><a href="#部署站点" class="headerlink" title="部署站点"></a>部署站点</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>更多信息: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/07/14/hello-world/" data-id="cj55ckdzm0001o4v9ua7rbjv3" class="article-share-link">Delen</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
 
 </section>
         

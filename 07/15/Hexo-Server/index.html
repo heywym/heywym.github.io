@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Hexo-Server | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="hexo-serverHexo 3 发布后, 服务器从主模块分离, 要使用服务器功能, 你首先得安装 hexo-server 1$ npm install hexo-server --save 一旦服务器被安装， 运行如下命令开启服务器. 你的网站默认运行在http://localhost:4000.当服务器运行, Hexo 会监视文件的修改并且自动更新, 所以没有必要重启服务器. 1$ hexo">
+<meta name="keywords" content="Hexo">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo-Server">
+<meta property="og:url" content="http://yoursite.com/2017/07/15/Hexo-Server/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="hexo-serverHexo 3 发布后, 服务器从主模块分离, 要使用服务器功能, 你首先得安装 hexo-server 1$ npm install hexo-server --save 一旦服务器被安装， 运行如下命令开启服务器. 你的网站默认运行在http://localhost:4000.当服务器运行, Hexo 会监视文件的修改并且自动更新, 所以没有必要重启服务器. 1$ hexo">
+<meta property="og:updated_time" content="2017-07-15T13:18:25.539Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Hexo-Server">
+<meta name="twitter:description" content="hexo-serverHexo 3 发布后, 服务器从主模块分离, 要使用服务器功能, 你首先得安装 hexo-server 1$ npm install hexo-server --save 一旦服务器被安装， 运行如下命令开启服务器. 你的网站默认运行在http://localhost:4000.当服务器运行, Hexo 会监视文件的修改并且自动更新, 所以没有必要重启服务器. 1$ hexo">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Zoeken"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-Hexo-Server" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/07/15/Hexo-Server/" class="article-date">
+  <time datetime="2017-07-15T05:44:32.000Z" itemprop="datePublished">2017-07-15</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Hexo-Server
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="hexo-server"><a href="#hexo-server" class="headerlink" title="hexo-server"></a>hexo-server</h3><p>Hexo 3 发布后, 服务器从主模块分离, 要使用服务器功能, 你首先得安装 hexo-server</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ npm install hexo-server --save</div></pre></td></tr></table></figure>
+<p>一旦服务器被安装， 运行如下命令开启服务器. 你的网站默认运行在<code>http://localhost:4000</code>.当服务器运行, Hexo 会监视文件的修改并且自动更新, 所以没有必要重启服务器.</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
+<p>如果你想要改变端口或者遇到<code>EADDRINUSE</code>erros, 使用<code>-p</code>选项来设置一个不同的端口.</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server -p 5000</div></pre></td></tr></table></figure>
+<h3 id="静态模式"><a href="#静态模式" class="headerlink" title="静态模式"></a>静态模式</h3><p>在静态模式, 只有<code>public</code>文件夹里面的文件能被访问, 并且文件监视被禁用. 你在开启服务器之前必须运行<code>hexo generate</code>. 通常用于生产环境.</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server -s</div></pre></td></tr></table></figure>
+<h3 id="自定义IP"><a href="#自定义IP" class="headerlink" title="自定义IP"></a>自定义IP</h3><p>Hexo 服务器默认运行在 0.0.0.0. 你能覆盖默认IP设置.</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server -i 192.168.1.1</div></pre></td></tr></table></figure>
+<h3 id="Pow"><a href="#Pow" class="headerlink" title="Pow"></a>Pow</h3><p>Pow 是Mac的零配置机架式服务器.</p>
+<ul>
+<li><strong>安装</strong></li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ curl get.pow.cx | sh</div></pre></td></tr></table></figure>
+<ul>
+<li><strong>设置</strong></li>
+</ul>
+<p>符号链接到文件夹到<code>~/.pow</code></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ <span class="built_in">cd</span> ~/.pow</div><div class="line">$ ln -s /path/to/myapp</div></pre></td></tr></table></figure>
+<p>你的网站可以在<code>http://myapp.dev</code>访问了. 这个URL是基于符号连接的名字</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2017/07/15/Hexo-Server/" data-id="cj55ckdzd0000o4v9lsvr7s3v" class="article-share-link">Delen</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Hexo/">Hexo</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2017/07/15/hexo-writing/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Nieuwer</strong>
+      <div class="article-nav-title">
+        
+          Hexo-Writing
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2017/07/14/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Ouder</strong>
+      <div class="article-nav-title">Hello World</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Labels</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Hexo/">Hexo</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/Hexo/" style="font-size: 10px;">Hexo</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archieven</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/07/">July 2017</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recente berichten</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2017/07/15/hexo-writing/">Hexo-Writing</a>
+          </li>
+        
+          <li>
+            <a href="/2017/07/15/Hexo-Server/">Hexo-Server</a>
+          </li>
+        
+          <li>
+            <a href="/2017/07/14/hello-world/">Hello World</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2017 王远谋<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+  </div>
+</body>
+</html>
